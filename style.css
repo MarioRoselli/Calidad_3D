@@ -1,0 +1,599 @@
+* {
+    font-family: 'Kanit', sans-serif;
+
+}
+
+
+
+:root {
+    --color-fondo-code: #f7f7f7;
+    --color-texto-code: #000;
+    --color-fondo: #fff;
+    --color-texto: #333;
+    --color-marca: rgba(238, 89, 151, 0.808);
+    --color-marca2: rgba(9, 11, 104, 0.808);
+    --color-detalle: rgb(99, 99, 99);
+    --color-azulado: rgb(97, 71, 120);
+    --color-negro-suave: rgb(27, 27, 30);
+    --color-negro-lite: rgb(27, 27, 32);
+    --colorpaleta-azul: #355070;
+    --colorpaleta-lila: #6d597a;
+    --colorpaleta-violaceo: #b56576;
+    --colorpaleta-rosado: #e56b6f;
+    --colorpaleta-te: #eaac8b;
+    --color-naranja: orangered;
+
+    --color-fondo: #e69bdc;
+    --color-fondo2: #fdd3f7;
+    --color-fondo3: #D7BDE2;
+    --color-fondo4: #2E4053;
+    --color-fondo5: #D0D3D4;
+    --color-fondo6: #2C3E50;
+    --color-fondo7: #F0F3F4;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 10px;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 96vmax;
+    align-self: center;
+    background-image: url(./Imagenes_recurso/Red-purple-gradient-background.jpg);
+    background-position: 2.5vmax;
+
+}
+
+.menu ul li {
+    font-size: large var(--colorpaleta-azul);
+    padding: 4px;
+    margin: 4px;
+    border-radius: 15px;
+    /*redondeo perfecto*/
+    display: inline-flex;
+    border: solid 1px #333;
+    border-radius: 15px;
+    box-shadow: 0 0 10px var(--color-fondo3);
+    cursor: pointer;
+    transition: transform .2s;
+    text-align: center;
+    background-color: var(--color-marca2);
+}
+
+.menu ul li a {
+    color: white;
+    padding: 2px;
+    margin: auto;
+
+}
+
+.menu li a {
+    color: var(--colorpaleta-azul);
+
+}
+
+.menu ul li:hover {
+    transform: scale(118%);
+}
+
+ul {
+    list-style: none;
+}
+
+.mario img {
+    width: 95vmax;
+    height: 175px;
+    text-align: center;
+    padding: 1px;
+    border: solid 5px #333;
+    border-radius: 15px;
+}
+
+
+h1 {
+    width: fit-content;
+    font-size: larger 40px;
+    color: var(--color-negro-suave);
+    background-size: var(--color-texto) solid 5px var(--color-texto);
+    border: solid var(--colorpaleta-azul);
+    border-radius: 15px;
+    box-shadow: 0 0 10px var(--color-marca2);
+    background-color: var(--colorpaleta-rosado);
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 1px;
+    margin: 1px;
+    margin-bottom: 1px;
+    letter-spacing: 2px;
+    box-sizing: 0 0 10 var(--color-fondo);
+}
+
+
+
+h2 {
+    font-size: 30px;
+    padding: 2px;
+    margin: 2px;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: var(--color-texto-code);
+    border-radius: 15px;
+}
+
+.menu p {
+    font-weight: lighter;
+    color: white;
+    background-color: var(--colorpaleta-azul);
+    border: solid 1px;
+    border-radius: 15px;
+    width: auto;
+    margin: auto;
+    padding: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+
+span {
+    padding: 2px;
+    border: solid #2E4053 1px;
+    border-radius: 15px;
+    column-gap: 1px;
+}
+
+
+.productos {
+    background-color: var(--colorpaleta-azul);
+    text-align: center;
+    padding: 10px;
+    align-items: flex;
+    border-radius: 15px;
+}
+
+.productos div {
+
+    width: 100%;
+    border-radius: 15px;
+}
+
+.productos h2 {
+    color: rgb(255, 255, 255);
+    padding: 40px;
+}
+
+/*
+.mates-cLubes {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}*/
+.productos img {
+    height: 300px;
+    width: 200px;
+    margin: 10px;
+    box-shadow: 0 0 3px white;
+    column-gap: 5px;
+    padding: 2px;
+}
+
+.tazas {
+    background-color: var(--color-texto);
+    text-align: center;
+    padding: 10px;
+    align-items: flex;
+}
+
+.tazas img {
+    height: 300px;
+    width: 200px;
+    margin: 10px;
+    box-shadow: 0 0 1px white;
+}
+
+.soporte-celulares {
+    background-color: var(--color-texto);
+    text-align: center;
+    padding: 10px;
+    align-items: flex;
+}
+
+.caja-contacto img {
+    height: 30px;
+    width: 30px;
+    padding: 7px;
+
+}
+
+.caja-contacto {
+    border: solid 3px var(--color-texto);
+    background-color: var(--colorpaleta-azul);
+    color: #fff;
+    padding: 5px;
+    padding-bottom: 20px;
+    margin: 2px;
+    position: fixed;
+    width: auto;
+    height: 5vmax;
+    border-radius: 15px;
+    right: 100px;
+    bottom: 3vmax;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: row;
+    z-index: 9999;
+    column-gap: 5px;
+
+}
+
+.btn-wsp {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    line-height: 30px;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.btn-wsp:hoover {
+    text-decoration: none;
+    color: green;
+    background-color: #fff;
+}
+
+.menudoble {
+    display: flex;
+    height: auto;
+    margin: 2px;
+    background-color: transparent;
+    display: flex;
+    column-gap: 25px;
+    margin: 5px;
+}
+
+.menu {
+    width: auto;
+    text-align: center;
+    display: flexbox;
+    border: var(--color-negro-suave) solid;
+    background-image: url(Imagenes_recurso/colores-luces.jpg);
+    border-radius: 15px;
+    padding: 8px;
+    margin: 12px;
+    justify-content: baseline;
+    row-gap: 5px;
+    align-items: baseline;
+    box-shadow: 0 0 10px var(--color-marca2);
+
+
+}
+
+.menu2 {
+    width: fit-content;
+    height: auto;
+    padding: auto;
+    margin: auto;
+    background-image: url(Imagenes_recurso/luces-azules.jpg);
+    border: solid 1px var(--color-texto);
+    border-radius: 15px;
+    align-items: auto;
+    gap: auto;
+    justify-content: flex;
+    text-align: center;
+    align-items: flex;
+
+}
+
+.menu2 video {
+    display: flexbox;
+    border-radius: 10px;
+    border: black;
+    background-color: transparent;
+    margin: 2px;
+    padding: 3px;
+    height: 270px;
+    width: 190px;
+    align-items: center;
+}
+
+
+/******************************/
+
+
+.placa-tarjeta {
+    background-color: transparent;
+    display: flex;
+    column-gap: 7px;
+
+}
+
+
+
+.tarjeta1 {
+    padding: 5px;
+    z-index: 9;
+    background-color: transparent;
+    border: solid 2px var(--color-texto);
+    width: 90vmax;
+    display: flexbox;
+    column-gap: 10px;
+    justify-content: flex-start;
+}
+
+.tarjeta1 div img {
+    border-radius: 5%;
+    box-shadow: var(--color-fondo)1 1 1 20;
+    margin: 2px;
+    padding: 3px;
+    height: 300px;
+    width: 200px;
+}
+
+.tarjeta-video {
+    padding: 15px;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    column-gap: normal;
+    justify-content: flex-start;
+
+}
+
+
+.tarjeta2 {
+    padding: 5px;
+    z-index: 9;
+    background-color: transparent;
+    border: solid 2px var(--color-texto);
+    width: 90vmax;
+    display: flexbox;
+    column-gap: 10px;
+    justify-content: flex-start;
+}
+
+.tarjeta2 div img {
+    border-radius: 5%;
+    box-shadow: var(--color-fondo)1 1 1 20;
+    margin: 2px;
+    padding: 3px;
+    height: 300px;
+    width: 200px;
+}
+
+.tarjeta3 {
+    padding: 5px;
+    z-index: 9;
+    background-color: transparent;
+    border: solid 2px var(--color-texto);
+    width: 90vmax;
+    display: flexbox;
+    column-gap: 10px;
+    justify-content: flex-start;
+}
+
+.tarjeta3 div img {
+    border-radius: 5%;
+    box-shadow: var(--color-fondo)1 1 1 20;
+    margin: 2px;
+    padding: 3px;
+    height: 250px;
+    width: 140px;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    text-decoration: none;
+}
+
+/***hoover***/
+.productos img:hover {
+    transform: scale(118%);
+}
+
+/***********responsive********************/
+/*******************************/
+
+
+@media screen and (min-width:500px) {
+
+
+
+    .mario img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menudoble {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu div {
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu2 {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu p a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .productos {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .productos div img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .caja-contacto {
+        width: auto;
+        bottom: 4vmax;
+        padding-bottom: 20px;
+    }
+}
+
+h3 {
+    font-size: 25px;
+    color: var(--color-texto);
+    background-color: #D7BDE2;
+    border-radius: 15px;
+}
+
+h5 {
+    font-size: 15px;
+    color: #333;
+    box-shadow: 0 0 10px var(--color-fondo3);
+    display: contents;
+}
+
+
+
+.ir-arriba{
+    position: fixed;
+	padding:20px;
+	background:var(--color-marca);
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	bottom:20px;
+	right:20px;
+    z-index: 8888;
+    border: solid 1px var(--color-marca2);
+    border-radius: 10px;
+}
+
+.ir-arriba img{
+    
+    height: 30px;
+    width: 30px;
+    padding: 7px;
+}
+
+/*******
+********
+**********
+CAMBIAR LOS H1, H2, Y H3. hecho
+INCORPORAR TEXTO A LA PÁGINA. (p)
+CARGAR Y ARREGLAR LAS IMÁGENES NUEVAS. (CATALOGAR). hecho
+ORDENAR LOS ELEMENTOS COMO EL INDICE LO ESTABLECE. hecho
+INTENTAR INCORPORAR BOTONES Y LIGARLOS CON LOS id DE CADA SECCIÓN. casi hecho
+ACOMODAR DETALLES DE DISEÑO.  en proceso
+INCORPORAR DATOS CORPORATIVOS(?). tal vez
+********
+*********
+******/
+section {
+    border-radius: 15px;
+}
+
+#soportes {
+    background-color: var(--color-texto-code);
+}
+
+#joistick {
+    background-image: url(Imagenes_recurso/Image_from_wp-s.ru.jpg);
+}
+
+#auriculares {
+    background-color: var(--colorpaleta-lila);
+}
+
+#mates {
+    background-image: url(Imagenes_recurso/arpillera.png);
+}
+
+
+
+#clubes {
+    background-image: url(Imagenes_recurso/alambrado.jpg);
+    background-size: 1900px;
+}
+
+#motor {
+    background-image: url(Imagenes_recurso/motor-auto.jpg);
+}
+
+#personalizados {
+    background-color: darkslategray;
+
+    background-image: url(Imagenes_recurso/luces-azules.jpg);
+}
+
+#menuVideos {
+    background-color: transparent;
+    border: 1px wheat;
+}
+
+
+
+#tazas {
+    background-image: url(Imagenes_recurso/colores-luces.jpg);
+}
+
+#llaveros {
+    background-image: url(Imagenes_recurso/luces-azules.jpg);
+}
+
+#mas-articulos {
+    background-image: url(Imagenes_recurso/colores-luces.jpg);
+}
+
+#auriculares {
+    background-image: url(Imagenes_recurso/colores-luces.jpg);
+}
+
+#celulares {
+    background-image: url(Imagenes_recurso/luces-azules.jpg);
+}
+
+#catalogo {
+    font-size: 35px;
+    margin: 5px;
+    background-color: transparent;
+}
+
+#calidad {
+    font-size: 35px;
+}
+
+#arpillera{
+    background-image: url(Imagenes_recurso/arpillera.png);
+}
